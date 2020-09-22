@@ -1,0 +1,225 @@
+#PRINT:  print|debug:custom|string|x|y|time|order
+#WAITTIME: waittime|time
+#SPAWN: spawn|id|x|y
+#HELPER helper|weapon:health:score:cash|cashval|scoreval|healthval|weaponid|x|y
+#OBJECT object|bmp_file|x|y|spdx|spdy|name
+
+
+print|title|Scripting Tutorial|0|0|8000|0
+
+print|debug|Welcome to the scripting tutorial!|0|0|2000|1
+waittime|1000
+print|debug|I will now demonstrate various script comands|0|0|2000|2
+waittime|1000
+print|debug|The script will now spawn some enemy ships, get ready...|0|0|2000|3
+print|debug|4|0|0|2000|4
+waittime|500
+print|debug|3..|0|0|2000|5
+waittime|500
+print|debug|2..|0|0|2000|6
+waittime|500
+print|debug|1..|0|0|2000|7
+waittime|500
+
+#first enemy force
+spawn|1|64|12
+waittime|100
+spawn|1|128|12
+waittime|100
+spawn|1|192|12
+waittime|100
+spawn|1|256|12
+waittime|2100
+
+#second enemy force
+print|custom|New enemy flanks have arrived! Prepare for battle!!!|64|64|2000|0
+spawn|1|384|12
+waittime|100
+spawn|1|448|12
+waittime|100
+spawn|1|512|12
+waittime|100
+spawn|1|576|12
+waittime|100
+
+#Third enemy force
+waittime|2100
+spawn|1|64|12
+waittime|100
+spawn|1|128|12
+waittime|100
+spawn|1|192|12
+waittime|100
+spawn|1|256|12
+waittime|100
+
+#draw tips
+print|debug|Tip: you can have up to 2 guns at once|64|64|2000|1
+waittime|200
+print|debug|Tip: collect guns that enemy ships drop to use thier guns|64|64|2000|2
+
+
+#fourth enemy force
+print|debug|Enemy transporters have been spotted, keep clear!|64|64|2000|3
+waittime|2100
+spawn|2|64|12
+waittime|100
+spawn|2|128|12
+waittime|100
+spawn|2|192|12
+waittime|100
+spawn|2|256|12
+waittime|100
+
+waittime|1000
+spawn|2|384|12
+waittime|100
+spawn|2|448|12
+waittime|100
+spawn|2|512|12
+waittime|100
+spawn|2|576|12
+waittime|100
+
+#second enemy force
+waittime|1200
+spawn|1|384|12
+waittime|100
+spawn|1|448|12
+waittime|100
+spawn|1|512|12
+waittime|100
+spawn|1|576|12
+waittime|100
+
+#Third enemy force
+waittime|2100
+spawn|1|64|12
+waittime|100
+spawn|1|128|12
+waittime|100
+spawn|1|192|12
+waittime|100
+spawn|1|256|12
+waittime|100
+
+waittime|2100
+spawn|2|64|12
+waittime|100
+spawn|2|128|12
+waittime|100
+spawn|2|192|12
+waittime|100
+spawn|2|256|12
+waittime|100
+
+waittime|1000
+spawn|2|384|12
+waittime|100
+spawn|2|448|12
+waittime|100
+spawn|2|512|12
+waittime|100
+spawn|2|576|12
+waittime|100
+#second enemy force
+waittime|1200
+spawn|1|384|12
+waittime|100
+spawn|1|448|12
+waittime|100
+spawn|1|512|12
+waittime|100
+spawn|1|576|12
+waittime|100
+
+#Third enemy force
+waittime|2100
+spawn|1|64|12
+waittime|100
+spawn|1|128|12
+waittime|100
+spawn|1|192|12
+waittime|100
+spawn|1|256|12
+waittime|100
+
+waittime|2100
+spawn|2|64|12
+waittime|100
+spawn|2|128|12
+waittime|100
+spawn|2|192|12
+waittime|100
+spawn|2|256|12
+waittime|100
+
+waittime|1000
+spawn|2|384|12
+waittime|100
+spawn|2|448|12
+waittime|100
+spawn|2|512|12
+waittime|100
+spawn|2|576|12
+waittime|100
+#second enemy force
+waittime|1200
+spawn|1|384|12
+waittime|100
+spawn|1|448|12
+waittime|100
+spawn|1|512|12
+waittime|100
+spawn|1|576|12
+waittime|100
+
+#Third enemy force
+waittime|2100
+spawn|1|64|12
+waittime|100
+spawn|1|128|12
+waittime|100
+spawn|1|192|12
+waittime|100
+spawn|1|256|12
+waittime|100
+
+waittime|2100
+spawn|2|64|12
+waittime|100
+spawn|2|128|12
+waittime|100
+spawn|2|192|12
+waittime|100
+spawn|2|256|12
+waittime|100
+
+waittime|1000
+spawn|2|384|12
+waittime|100
+spawn|2|448|12
+waittime|100
+spawn|2|512|12
+waittime|100
+spawn|2|576|12
+waittime|100
+
+print|debug|Get these score bubbles!|64|64|2000|1
+
+helper|score|0|100000|0|0|0|0
+
+helper|score|0|100000|0|0|0|0
+
+helper|score|0|100000|0|0|0|0
+
+helper|score|0|100000|0|0|0|0
+
+helper|score|0|100000|0|0|0|0
+
+helper|score|0|100000|0|0|0|0
+
+helper|weapon|0|100000|0|0|0|11
+
+waittime:8000
+load|main.spt

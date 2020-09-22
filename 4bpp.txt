@@ -1,0 +1,9 @@
+Advanced Space Shooter
+
+over 2200 lines! Advanced engine supports level scripting, no limit on enemies, guns, explosions, objects, helpers. Very customizable. Includes my first level, mars. Please use this code for something because I may not be able to continue it. the basic engine is complete, just add graphics, levels, and personality!
+
+note: I have the original, full color bitmaps if you want them email me:
+
+bphil88@adelphia.net
+
+or if you want more detail on script existing commands
